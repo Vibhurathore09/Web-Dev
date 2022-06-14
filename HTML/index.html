@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepcoding</title>
+    <style>
+        h1{
+            color:lightblue;
+
+        }
+        p{
+            background-color: lightpink;
+        }
+        #unique{
+            text-decoration: underline;
+        }
+        .common{
+            background-color:lightgoldenrodyellow;
+        }
+        .common p{
+            text-decoration: dotted;
+            color: cornflowerblue;
+        }
+        .common > p{
+            background-color: yellow;
+        }
+        div[class = "something3"] > p{
+            color : red;
+        }
+        /* Attribute */
+        label[for]{
+            color :pink;
+        }
+        label[for = "name"]{
+            background: cadetblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class = "common common2">
+        <div class = "something1">Something</div>
+        <div class = "something2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis accusantium ratione, quo rem tempore voluptatum aut reprehenderit pariatur optio molestias molestiae, inventore odit veniam non reiciendis. Neque omnis asperiores cupiditate!</p>
+        </div>
+    </div>
+    <div></div>
+    <div class ="something3">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis sunt dolorem molestias vitae.</p>
+    </div>
+    <div class = "sib"> I am Sibling</div>
+    
+    <!--Heading-->
+    <h1>Hello Everyone</h1>
+    <h2>Hello Everyone</h2>
+    <h3>Hello Everyone</h3>
+
+    <!--Paragraph-->
+
+    <p>Lorem ipsum sit</p>
+
+    <!-- anchor -->
+    <a href="https://www.google.com/">Go to google</a>
+
+    <!-- Division-->
+    <div id = "unique">
+        Hello
+        <p>Pepcoder</p>
+    </div>
+    <div class = "common">Hello</div>
+    <div></div>
+    <div class = "common2">Hello From Vibhu</div>
+        
+    
+
+    <!--unordered list-->
+    <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+        <li>Four</li>
+    </ul>
+    <!-- ordered list-->
+    <ol>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+
+    <span> Content Filling</span>
+
+    <img width = "50" src = "./image.jpg" alt = "Some Image">
+    <form>
+        <label for="name">Name</label>
+        <input type = "text" id = "name">
+        <label for="email">Email</label>
+        <input type = "email" id = "email">
+        <label for="number">number</label>
+        <input type = "number">
+        <label for = "password">password</label>
+        <input type = "password">
+    </form>
+</body>
+</html>
