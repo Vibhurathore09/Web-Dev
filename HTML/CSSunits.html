@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .px{
+            background-color: lightblue;
+            font-size: 30px;
+        }
+        .rem{
+            font-size : 2rem;/* relative font size of the root element*/
+        }
+        .vh-vw{
+            font-size:10vh; /*vh or vw -> x% of viewport*/
+        }
+        .parent{
+            height : 10rem;
+            width : 30rem;
+            background-color: lightgreen;
+        }
+        .child{
+            background-color: lightcoral;
+            width : 20%;
+            height : 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class = "px">Hello </div>
+    <div class = "rem">Rem</div>
+    <div class = "vh-vw">vh-vw</div>
+    <div class = "parent">
+        <div class = "child"></div>
+    </div>
+</body>
+</html>
