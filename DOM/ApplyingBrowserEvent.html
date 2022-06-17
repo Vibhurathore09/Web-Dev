@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            display:flex;
+        }
+        .pink{
+            height : 20rem;
+            width : 20rem;
+            justify-content: center;
+            align-items: center;
+            background-color: lightpink;
+        }
+        .blue{
+            height : 10rem;
+            width : 10rem;
+            justify-content: center;
+            align-items: center;
+            background-color : lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class ="pink">
+        <div class="blue"></div>
+    </div>
+    <script>
+        //Q The following code is broken. Even when clicked on blue , its alterted that pink is clicked 
+        let pink = document.querySelector(".pink");
+        let blue = document.querySelector(".blue");
+        pink.addEventListener("click" ,(e) =>{
+            if(e.target === e.currentTarget)
+            alert("pink was clicked")
+        })
+    </script>
+</body>
+</html>
