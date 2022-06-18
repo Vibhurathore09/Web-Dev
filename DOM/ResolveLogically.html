@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        .pink{
+            height:20rem;
+            width:100%;
+            background-color: lightpink;
+        }
+        .green{
+            height:15rem;
+            width:90%;
+            background-color: lightgreen;
+        }
+        .blue{
+            height:10rem;
+            width:80%;
+            background-color: lightblue;
+        }
+        .yellow{
+            height:5rem;
+            width:70%;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="pink">
+        <div class="green">
+            <div class="blue">
+                <div class="yellow"></div>
+            </div>
+        </div> 
+    </div>
+    <script>
+        //write a script using the method querySelectro that goes into lowest depth div and delete it. Alternatively also write one line non recursive solutio usig querySelectorAll
+
+        //----Iterative---
+        // let divElem = document.querySelector("div");
+
+        // while(divElem.children.length>0){
+        //     divElem = divElem.children[0];
+        // }
+        // divElem.remove();
+
+
+        //----Recursive----
+        // function removeDeepest(divElem){
+        //     if(divElem.children.length >0)
+        //         removeDeepest(divElem.children[0]);
+        //     else{
+        //         divElem.remove();
+        //     }
+
+        // }
+        // removeDeepest(divElem);
+
+
+        //One-Liner
+        let allDivELems = document.querySelectorAll("div");
+        allDivELems[3].remove();
+
+    </script>
+</body>
+</html>
