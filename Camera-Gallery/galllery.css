@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin : 0;
+    padding : 0;
+}
+.back{
+    width : 5rem;
+    height : 5rem;
+    border-radius : 50%;
+    background-color : black;
+    color : white;
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+.back:hover{
+    cursor: pointer;
+}
